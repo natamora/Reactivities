@@ -8,8 +8,12 @@ Course shows how to build an application with:
 * MobX
 
 What u can learn:
-* how to use AutoMapper and MediatR packages for .Net
-* how to use Entity Framework Core as ORM
-* how to use MobX as state management library
-* how to build WebAPI in .Net Core using CQRS and Mediator pattern
-* how to integrate ASP.NET Core SignalR into an application for real time web communication
+* Building WebAPI in .Net Core using CQRS and Mediator pattern
+* Setting up ASP.NET Core Identity for authentication
+* Using React with TypeScript
+* Using React Router
+* Using AutoMapper and MediatR packages in .Net
+* Building UI using Semantic UI
+* Using Entity Framework Core as ORM
+* Using MobX as state management library
+* How to integrate ASP.NET Core SignalR into an application for real time web communication for chat feature
