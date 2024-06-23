@@ -20,7 +20,7 @@ export default observer(function ProfileActivities() {
         loadUserActivities(profile!.username);
     }, [loadUserActivities, profile]);
 
-    function handleTabChange(e: SyntheticEvent, data: TabProps) {
+    function handleTabChange(_: SyntheticEvent, data: TabProps) {
         loadUserActivities(profile!.username, panes[data.activeIndex as number].pane.key);
     }
     return (
