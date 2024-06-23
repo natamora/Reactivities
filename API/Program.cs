@@ -37,6 +37,10 @@ app.UseCors("CorsPolicy");
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseDefaultFiles();  // look wwwroot folder and look for index
+app.UseStaticFiles();
+app.MapFallbackToController("Index", "Fallback");
+
 app.MapControllers();
 app.MapHub<ChatHub>("/chat");
 
