@@ -13,19 +13,19 @@ jobs:
   build:
     runs-on: windows-latest
 
-    - name: Set up NodeJS
-      uses: actions/setup-node@v3
-      with:
-        node-version: '20'
-    
-    - name: Install deps and build react app
-      run: |
-        cd client-app
-        npm install
-        npm run build
-
     steps:
       - uses: actions/checkout@v4
+
+      - name: Set up NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      
+      - name: Install deps and build react app
+        run: |
+          cd client-app
+          npm install
+          npm run build
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v1
@@ -63,9 +63,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v1
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5F6CBD6A9B424A90A14FD940EBDFDF70 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_FB4384381AF3444E8883D5DD0F6210F9 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D8C41868CFE64329B49C4CD76C265532 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_3B679AC8883F4D16BD21ED36702B781B }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_14AA98121CCF43CEA86627DC2497CC51 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_6B598445DA4E46D8937D27AAC3464D41 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
