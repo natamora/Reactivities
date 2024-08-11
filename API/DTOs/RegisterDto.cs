@@ -16,7 +16,8 @@ namespace API.DTOs
         public string Email { get; set; }
 
         [Required]
-        [RegularExpression("(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$", ErrorMessage = "Password must be complex")]
+        [RegularExpression("(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$",
+            ErrorMessage = "Password must be complex. It should contain a digit, a lowercase and an uppercase letter and it should be 4 to 8 characters long.")]
         public string Password { get; set; }
 
         [Required]
