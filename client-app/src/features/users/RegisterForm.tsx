@@ -1,6 +1,6 @@
 import { ErrorMessage, Form, Formik } from "formik";
 import MyTextInput from "../../app/common/form/MyTextInput";
-import { Button, Header } from "semantic-ui-react";
+import { Button, Header, Message } from "semantic-ui-react";
 import { useStore } from "../../app/stores/store";
 import { observer } from "mobx-react-lite";
 import * as Yup from 'yup';
@@ -24,6 +24,9 @@ export default observer(function RegisterForm() {
             {({ handleSubmit, isSubmitting, errors, isValid, dirty }) => (
                 <Form className='ui form error' onSubmit={handleSubmit} autoComplete='off'>
                     <Header as='h2' content='Sign up to Reactivities' color="teal" textAlign="center" />
+                    <Message info>
+                        If u have trouble receiving confirmation email, you can use test account. Username: test Password: Pa$$w0rd
+                    </Message>
                     <MyTextInput placeholder='Display Name' name='displayName' />
                     <MyTextInput placeholder='Username' name='username' />
                     <MyTextInput placeholder='Email' name='email' />
