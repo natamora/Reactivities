@@ -41,14 +41,20 @@ namespace API.Controllers
         public async Task<ActionResult<UserDto>> Login(LoginDto loginDto)
         {
             var user = await _userManager.Users.Include(p => p.Photos)
-                .FirstOrDefaultAsync(x => x.Email == loginDto.Email);
+                .FirstOrDefaultAsync(x => x.Email == loginDto.EmailOrUsername || x.UserName == loginDto.EmailOrUsername);
 
-            if (user == null) return Unauthorized("Invalid email");
-
+            if (user == null) 
+            {
+                ModelState.AddModelError("emailOrUsername", "Could not find user with this email or username");
+                return ValidationProblem(ModelState);
+            }
             if (user.UserName == "bob") user.EmailConfirmed = true;
 
-            if (!user.EmailConfirmed) return Unauthorized("Email not confirmed");
-
+            if (!user.EmailConfirmed) 
+            {
+                ModelState.AddModelError("email", "Email not confirmed");
+                return ValidationProblem(ModelState);
+            }
             var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
 
             if (result.Succeeded)
@@ -56,7 +62,8 @@ namespace API.Controllers
                 await SetRefreshToken(user);
                 return CreateUserObject(user);
             }
-            return Unauthorized("Invalid password");
+            ModelState.AddModelError("password", "Invalid password");
+            return ValidationProblem(ModelState);
         }
 
         [AllowAnonymous]
