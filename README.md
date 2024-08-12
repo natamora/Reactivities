@@ -3,7 +3,7 @@
 > [!WARNING]
 > The webpage may take a few minutes to load due to the hosting setup and the type of free Azure subscription. The database is paused when not in use.
 
-[Demo version of the app](https://reactivities-natamora.azurewebsites.net/)
+[Demo version of the app](https://natamora-reactivities.azurewebsites.net/)
 
 
 [Udemy Course](https://www.udemy.com/course/complete-guide-to-building-an-app-with-net-core-and-react/) - Complete guide to building an app with .Net Core and React
