@@ -1,25 +1,28 @@
-##  Reactivities (WIP)
+# Reactivities
 
-> [!WARNING]
-> The webpage may take a few minutes to load due to the hosting setup and the type of free Azure subscription. The database is paused when not in use.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20Now-green?style=flat-square)](https://natamora-reactivities.azurewebsites.net/)
 
-[Demo version of the app](https://natamora-reactivities.azurewebsites.net/)
+> ⚠️ **Note:** The webpage may take a few minutes to load due to the hosting setup and the type of free Azure subscription. The database is paused when not in use.
 
+## About
 
-[Udemy Course](https://www.udemy.com/course/complete-guide-to-building-an-app-with-net-core-and-react/) - Complete guide to building an app with .Net Core and React
+This project was created during the Udemy course [Complete Guide to Building an App with .NET Core and React](https://www.udemy.com/course/complete-guide-to-building-an-app-with-net-core-and-react/). It demonstrates the use of .NET Core and React to build a full-stack application.
 
-## General info
-Course shows how to build an application with:
-* .Net Core
-* React (with TypeScript)
-* MobX
-What u can learn:
-* Building WebAPI in ${\textsf{\color{limegreen}.Net Core}}$ using ${\textsf{\color{limegreen}CQRS}}$ and ${\textsf{\color{limegreen}Mediator}}$ pattern
-* Setting up ${\textsf{\color{limegreen}ASP.NET Core Identity}}$ for authentication
-* Using ${\textsf{\color{limegreen}React}}$ with ${\textsf{\color{limegreen}TypeScript}}$
-* Using ${\textsf{\color{limegreen}React Router}}$
-* Using ${\textsf{\color{limegreen}AutoMapper}}$ and ${\textsf{\color{limegreen}MediatR}}$ packages in .Net
-* Building UI using ${\textsf{\color{limegreen}Semantic UI}}$
-* Using ${\textsf{\color{limegreen}Entity Framework Core as ORM}}$ 
-* Using ${\textsf{\color{limegreen}MobX}}$ as state management library
-* How to integrate ${\textsf{\color{limegreen}ASP.NET Core SignalR}}$ into an application for real time web communication for chat feature
+## Course Overview
+
+This course shows how to build an application with:
+* **.NET Core**
+* **React (with TypeScript)**
+* **MobX**
+
+What You Will Learn:
+* Building a Web API in **.NET Core** using **CQRS** and **Mediator** patterns
+* Setting up **ASP.NET Core Identity** for authentication
+* Using **React** with **TypeScript**
+* Implementing **React Router**
+* Utilizing **AutoMapper** and **MediatR** packages in .NET
+* Building UI with **Semantic UI**
+* Working with **Entity Framework Core** as ORM
+* Managing state with **MobX**
+* Integrating **ASP.NET Core SignalR** for real-time web communication (e.g., chat features)
+
