@@ -6,16 +6,16 @@
 
 ## About
 
-This project was created during the Udemy course [Complete Guide to Building an App with .NET Core and React](https://www.udemy.com/course/complete-guide-to-building-an-app-with-net-core-and-react/). It demonstrates the use of .NET Core and React to build a full-stack application.
+This project is an educational full-stack web application. It demonstrates the use of .NET Core and React to build a full-stack application and gave me insight into how the frontend and backend communicate and work together seamlessly.
 
-## Course Overview
+## Technology Stack & Features
 
-This course shows how to build an application with:
+This application is built with:
 * **.NET Core**
 * **React (with TypeScript)**
 * **MobX**
 
-What You Will Learn:
+Key features and concepts implemented:
 * Building a Web API in **.NET Core** using **CQRS** and **Mediator** patterns
 * Setting up **ASP.NET Core Identity** for authentication
 * Using **React** with **TypeScript**
